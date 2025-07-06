@@ -26,3 +26,20 @@ def get_name():
     return "Nimra"
 message = f"Hello, {get_name()}!"
 print(message)
+
+
+name = "Nimra"
+age = 27
+
+# Old method (concatenation)
+message1 = "My name is " + name + " and I am " + str(age) + " years old."
+
+# Old method (.format method)
+message2 = "My name is {} and I am {} years old.".format(name, age)
+
+# New method (f-string)
+message3 = f"My name is {name} and I am {age} years old."
+
+print(message1)
+print(message2)
+print(message3)
